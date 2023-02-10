@@ -2,20 +2,28 @@
 import './assets/css/App.css';
 import './assets/css/reset.css'
 
+import{Routes, Route} from 'react-router-dom'
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
+import Home from './pages/home/Home'
+import Aboutme from './pages/aboutme/Aboutme';
+import Contact from './pages/contact/Contact';
+import Progress from './pages/progress/Progress';
+import Resume from './pages/resume/Resume';
+import Work from './pages/work/Work';
 function App() {
   return (
     <div className="App">
-      <div className='main-text'>
-        <div className='white-font text-align-center hello-center'> Hello, I am</div>
-        <div className='white-font text-align-center name-center'>Fiona Nicdao</div>
-        <div className='white-font text-align-center title-text'>Software Engineer</div>
-      </div>
-      <div>
-        <p className='change-text'>
-          Change your Perspective on the World Around You, <br></br>
-           You Might Find Something Interesting 
-        </p>
-      </div>
+      <Header/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/aboutme' element={<Aboutme/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/progress' element={<Progress/>}/>
+        <Route path='/resume' element={<Resume/>}/>
+        <Route path='/work' element={<Work/>}/>
+      </Routes>
+      <Footer/>
     </div>
   );
 }
