@@ -1,5 +1,9 @@
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import * as React from 'react'
+// import { useGesture } from '@use-gesture/react'
+// import { animated, useSpring, useSprings } from '@react-spring/web'
 import { NavLink } from "react-router-dom"
+// import '../header/header.scss'
 
 export default function Header(){
     return(
