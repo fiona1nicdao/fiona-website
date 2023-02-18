@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
-import './assets/css/App.css';
-import './assets/css/reset.css'
+import './assets/css/App.scss';
+import './assets/css/reset.css';
+// import './components/header/header.scss';
 
 import{Routes, Route} from 'react-router-dom'
 import Header from './components/header/Header'
@@ -11,6 +12,7 @@ import Contact from './pages/contact/Contact';
 import Progress from './pages/progress/Progress';
 import Resume from './pages/resume/Resume';
 import Work from './pages/work/Work';
+
 function App() {
   return (
     <div className="App">
