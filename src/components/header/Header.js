@@ -8,6 +8,7 @@ import { NavLink } from "react-router-dom"
 export default function Header(){
     return(
         <header className="header">
+            <h1 className='fiona-header'>Fiona Nicdao</h1>
             <div className="dropdown">
                 <button className="dropdown-menu-button">
                     <i className="menu-icon fa-solid fa-bars"></i>
