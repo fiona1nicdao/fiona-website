@@ -5,7 +5,7 @@ export default function Aboutme(){
             <h1>about me </h1>
             <div className='box'></div>
             <div className='about-me-content'>
-                
+   
                 <div className='pictureme'>
                         <img className="me" alt="Fiona" src={mepic}/>
                 </div>
