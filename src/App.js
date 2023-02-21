@@ -21,6 +21,8 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      {/* <Home/> */}
+      {/* <Aboutme/> */}
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/aboutme' element={<Aboutme/>}/>
