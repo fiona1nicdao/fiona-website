@@ -40,12 +40,21 @@ $tablet: 500px;
       display: none;
       min-width: 160px;
     }
+    
     .dropdown-content a{
-      color: #ffffff;
+      color:#8b8888;
+      // color: #ffffff;
+      // color:#000000;
       font-size: 20px;
       padding: 12px 40px 0px 0px;
       text-decoration: none;
       display: block;
+      // .white{
+      //   color:#ffffff;
+      // }
+      // .black{
+      //   color:#000000;
+      // }
     }
     .dropdown-content a:hover{
       background-color: rgb(78, 98, 141, 0.5);
@@ -163,24 +172,33 @@ $tablet: 500px;
   .about-me-page{
     // color:#ffffff;
     position:relative;
-    top: 130px;
+    top: 10px;
     padding: 10px;
-    background-color: rgb(38, 46, 79);
+    // background-color: rgb(38, 46, 79);
+    background-color: #ffffff;
+    height: 800px;
+    @media screen and (min-width:500px) {
+      top: 100px;
+    }
 
     h1{
-      color:white;
+      // color:white;
+      color:black
+
 
     }
     .about-me-content{
       @media screen and (min-width:750px){
         display: flex;
-        justify-content:space-around;
-        margin-top:70px;
+        flex-direction: row-reverse;
+        justify-content:space-evenly;
+        margin-top:150px;
       }
     }
 
     .Paragraph{
       color:black;
+      font-family: Arial, Helvetica, sans-serif;
       background-color: white;
       text-align: center;
       position:relative;
@@ -189,11 +207,38 @@ $tablet: 500px;
       margin-bottom: 50px;
       max-width: 400px;
       margin: auto;
+      line-height: 25px;
       @media screen and (min-width:750px){
         width: 400px;
         margin: none;
         // margin-left: 100px;
       }
+      @media screen and (min-width:1000px){
+        font-size:20px;
+        max-width: 550px;
+        width: 550px;
+        // text-align: left;
+      }
+      .large{
+        font-weight:900;
+        font-size: 30px;
+        padding: 5px;
+
+      }
+      .textcoder{
+        font-weight: 900;
+        font-size: 25px;
+        padding: 10px;
+      }
+      .textme{
+        font-weight: 600;
+        @media screen and (min-width:1000px){
+          line-height: 30px;
+          text-align: left;
+
+        }
+      }
+
 
     }
     .box{
@@ -201,11 +246,12 @@ $tablet: 500px;
       display: flex;
       margin:auto;
       z-index: 3;
-      background-color:rgb(38, 46, 79) ;
+      // background-color:rgb(38, 46, 79) ;
+      background-color: #ffffff;
       width: 280px;
       height:50px;
       @media screen and (min-width:750px){
-        // display: none;
+        display: none;
         position: absolute;
         top:60px;
         width: 250px;
@@ -221,7 +267,8 @@ $tablet: 500px;
       @media screen and (min-width:750px){
         // display: none;
         top:-20px;
-        margin-left:50px;
+        // margin-left:50px;
+        margin: auto;
       }
     }
 
@@ -229,10 +276,57 @@ $tablet: 500px;
 
       margin:auto;
       width: 200px;
+      @media screen and (min-width:750px){
+        width:250px;
+      }
+      @media screen and (min-width:1000px){
+        width:300px;
+
+      }
+
 
     }
 
 
+  }
+  // portfolio page
+  .portfolio-page{
+    position:relative;
+    top: 10px;
+    padding: 10px;
+    // background-color: rgb(38, 46, 79);
+    // background-color: #ffffff;
+    background-color: #192134;
+    height: 800px;
+    @media screen and (min-width:500px) {
+      top: 100px;
+    }
+  }
+  //  contact page
+  .contact-page{
+    position:relative;
+    top: 10px;
+    padding: 10px;
+    // background-color: rgb(38, 46, 79);
+    // background-color: #ffffff;
+    background-color: #192134;
+    height: 800px;
+    @media screen and (min-width:500px) {
+      top: 100px;
+    }
+  }
+  // resume page
+  .resume-page{
+    position:relative;
+    top: 10px;
+    padding: 10px;
+    // background-color: rgb(38, 46, 79);
+    // background-color: #ffffff;
+    background-color: #192134;
+    height: 800px;
+    @media screen and (min-width:500px) {
+      top: 100px;
+    }
   }
   // foooter
   footer{

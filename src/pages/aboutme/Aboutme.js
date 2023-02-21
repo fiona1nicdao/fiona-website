@@ -1,11 +1,24 @@
+import React, { useState, useEffect } from 'react';
 import mepic from '../../assets/images/me.png'
+import { ChangeMenuColor } from '../../hooks/ChangeMenuColor';
+
+
 export default function Aboutme(){
+    console.log("testing")
+    // useEffect(() => {
+    //     console.log("testing")
+    // })
+    ChangeMenuColor();
+    // window.onload = ChangeMenuColor;
+
+
+
     return(
         <div className="about-me-page">
             <h1>about me </h1>
             <div className='box'></div>
             <div className='about-me-content'>
-                
+   
                 <div className='pictureme'>
                         <img className="me" alt="Fiona" src={mepic}/>
                 </div>

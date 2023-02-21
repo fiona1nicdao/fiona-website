@@ -2,6 +2,7 @@
 import './assets/css/App.scss';
 import './assets/css/reset.css';
 // import './components/header/header.scss';
+import { ChangeMenuColor } from './hooks/ChangeMenuColor';
 
 import{Routes, Route} from 'react-router-dom'
 import Header from './components/header/Header'
@@ -13,10 +14,15 @@ import Progress from './pages/progress/Progress';
 import Resume from './pages/resume/Resume';
 import Work from './pages/work/Work';
 
+// ChangeMenuColor();
 function App() {
+  ChangeMenuColor();
+
   return (
     <div className="App">
       <Header/>
+      {/* <Home/> */}
+      {/* <Aboutme/> */}
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/aboutme' element={<Aboutme/>}/>
