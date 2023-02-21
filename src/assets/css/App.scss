@@ -40,12 +40,21 @@ $tablet: 500px;
       display: none;
       min-width: 160px;
     }
+    
     .dropdown-content a{
-      color: #ffffff;
+      color:#8b8888;
+      // color: #ffffff;
+      // color:#000000;
       font-size: 20px;
       padding: 12px 40px 0px 0px;
       text-decoration: none;
       display: block;
+      // .white{
+      //   color:#ffffff;
+      // }
+      // .black{
+      //   color:#000000;
+      // }
     }
     .dropdown-content a:hover{
       background-color: rgb(78, 98, 141, 0.5);
@@ -163,11 +172,14 @@ $tablet: 500px;
   .about-me-page{
     // color:#ffffff;
     position:relative;
-    top: 130px;
+    top: 10px;
     padding: 10px;
     // background-color: rgb(38, 46, 79);
     background-color: #ffffff;
     height: 800px;
+    @media screen and (min-width:500px) {
+      top: 100px;
+    }
 
     h1{
       // color:white;
@@ -180,12 +192,13 @@ $tablet: 500px;
         display: flex;
         flex-direction: row-reverse;
         justify-content:space-evenly;
-        margin-top:70px;
+        margin-top:150px;
       }
     }
 
     .Paragraph{
       color:black;
+      font-family: Arial, Helvetica, sans-serif;
       background-color: white;
       text-align: center;
       position:relative;
@@ -194,6 +207,7 @@ $tablet: 500px;
       margin-bottom: 50px;
       max-width: 400px;
       margin: auto;
+      line-height: 25px;
       @media screen and (min-width:750px){
         width: 400px;
         margin: none;
@@ -203,6 +217,7 @@ $tablet: 500px;
         font-size:20px;
         max-width: 550px;
         width: 550px;
+        // text-align: left;
       }
       .large{
         font-weight:900;
@@ -217,6 +232,11 @@ $tablet: 500px;
       }
       .textme{
         font-weight: 600;
+        @media screen and (min-width:1000px){
+          line-height: 30px;
+          text-align: left;
+
+        }
       }
 
 
