@@ -1,7 +1,7 @@
 import { ChangeMenuColor } from "../../hooks/ChangeMenuColor"
 
 export default function Work(){
-    ChangeMenuColor();
+    // ChangeMenuColor();
     return(
         <div className="portfolio-page">
             <div>project 1</div>

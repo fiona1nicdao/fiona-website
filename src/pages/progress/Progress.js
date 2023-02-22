@@ -1,7 +1,7 @@
 import { ChangeMenuColor } from "../../hooks/ChangeMenuColor"
 
 export default function Progress(){
-    ChangeMenuColor()
+    // ChangeMenuColor()
 
     return(
         <div>
