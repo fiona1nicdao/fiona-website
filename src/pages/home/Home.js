@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import { useTrail, a } from '@react-spring/web'
-import { ChangeMenuColor } from '../../hooks/ChangeMenuColor'
 
 const Trail = ({ open, children }) => {
   const items = React.Children.toArray(children)
@@ -23,12 +22,9 @@ const Trail = ({ open, children }) => {
 }
   
 export default function Home(){
-
-  ChangeMenuColor();
   const [open] = useState(true)
     return(
       <div className='home-page'>
-   
             <div className='main-text' >
               <Trail open={open}>
               <div className='white-font hello-center'> Hello, I am</div>

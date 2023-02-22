@@ -1,60 +1,82 @@
 $tablet: 500px;
 .App {
-  // background-color: #131921;
   background-image: url(../images/flippedChicago.jpg);
   background-size:cover !important;
   background-repeat: no-repeat;
   font-family: 'Courier New','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 1200px;
-  /* min-height: 200px; */
-  /* opacity: 0.7; */
-  /* overflow: hidden; */
-  /* width: 100%; */
-  /* -webkit-background-size: cover !important; */
-  /* display: flex; */
-  /* flex-direction: column; */
+
 
   /* header  */
   .header{
     // width: 100%;
     z-index: 2;
+    // position: absolute;
+    // right:1px;
+
+    @media screen and (min-width:530px){
+      background-color: #090e18;
+      padding: 10px 0px 10px 0px;
+    }
+
     .fiona-header{
-      position: absolute;
-      top:10px;
+      // position: absolute;
+      // top:10px;
       display: none;
-      // right: 700px;
       color: white;
       font-size:24px;
-      width: 100px;
-      padding: 30px;
+      // width: 100px;
+      padding: 20px;
+      @media screen and (min-width:530px){
+        // display: block;
+        // text-align: left;
+      }
+
+    }
+    .dropdown{
+      text-align: right;
+      @media screen and (min-width:530px){
+        // display: inline;
+        text-align: center;
+        // padding-top: 50px;
+      }
     }
     .dropdown-menu-button{
       background: none;
       border: none;
       padding: 40px 40px 0px 40px; 
+      @media screen and (min-width:530px){
+        display: none;
+        // text-align: left;
+      }
     }
-    .dropdown{
-      text-align: right;
-    }
+
     .dropdown-content{
       display: none;
       min-width: 160px;
+      @media screen and (min-width:530px){
+        display: inline;
+        // padding-top: 100px;
+        // display: inline;
+        // text-align: left;
+      }
+
     }
     
     .dropdown-content a{
-      color:#8b8888;
-      // color: #ffffff;
+      color: #ffffff;
       // color:#000000;
       font-size: 20px;
       padding: 12px 40px 0px 0px;
       text-decoration: none;
       display: block;
-      // .white{
-      //   color:#ffffff;
-      // }
-      // .black{
-      //   color:#000000;
-      // }
+      @media screen and (min-width:530px){
+        // margin-top:100px;
+        padding: 10px 10px 10px 10px;
+        display: inline;
+
+      }
+
     }
     .dropdown-content a:hover{
       background-color: rgb(78, 98, 141, 0.5);
@@ -71,18 +93,18 @@ $tablet: 500px;
       color:#4e628d;
     }
   }
-  @media screen and (min-width:500px){
-    .header{
-      position: absolute;
-      right: 1px;
-      top: 1px;
-      height:250px;
-    }
-  } 
+
   /* home page  */
   .home-page{
-    padding-top: 30px;
+    padding-top: 35px;
     z-index: 1;
+    
+    @media screen and (min-width: 500px){
+      padding-top: 0px;
+      position: relative;
+      top:-110px;
+      // height:100px;
+    }
 
     .trailsText {
     // position: relative;
@@ -138,6 +160,12 @@ $tablet: 500px;
 
     .sub-text{
       padding-top: 450px;
+      @media screen and (min-width:500px){
+        padding-top: 570px;
+      }
+      @media screen and (min-width:750px){
+        padding-top: 550px;
+      }
     }
     .white-font{
       color: #ffffff;
@@ -168,7 +196,7 @@ $tablet: 500px;
     }
 
   }
-  // about me page 
+  about me page 
   .about-me-page{
     // color:#ffffff;
     position:relative;
@@ -333,7 +361,7 @@ $tablet: 500px;
     position:relative;
     bottom: -100px;
     @media screen and (min-width:500px) {
-      bottom: -150px;
+      bottom: -10px;
     }
 
     .contacts-footer{

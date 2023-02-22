@@ -4,11 +4,11 @@ import { ChangeMenuColor } from '../../hooks/ChangeMenuColor';
 
 
 export default function Aboutme(){
-    console.log("testing")
+    // console.log("testing")
     // useEffect(() => {
     //     console.log("testing")
     // })
-    ChangeMenuColor();
+    // ChangeMenuColor();
     // window.onload = ChangeMenuColor;
 
 
